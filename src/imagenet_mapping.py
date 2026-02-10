@@ -5,7 +5,9 @@ import requests
 
 IMAGENET100_WNIDS_URL = "https://raw.githubusercontent.com/HobbitLong/CMC/master/imagenet100.txt"
 # index -> [wnid, label]
-IMAGENET_CLASS_INDEX_URL = "https://raw.githubusercontent.com/pytorch/vision/main/torchvision/models/imagenet_class_index.json"
+# IMAGENET_CLASS_INDEX_URL = "https://raw.githubusercontent.com/pytorch/vision/main/torchvision/models/imagenet_class_index.json"
+IMAGENET_CLASS_INDEX_URL = "https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json"
+
 
 @dataclass(frozen=True)
 class ImagenetMaps:
